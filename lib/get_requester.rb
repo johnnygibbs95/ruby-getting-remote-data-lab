@@ -6,6 +6,7 @@ class GetRequester
     attr_accessor :url
 
     def initialize(url)
+        binding.pry
         @url = url
     end
 
