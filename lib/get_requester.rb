@@ -6,7 +6,6 @@ class GetRequester
     attr_accessor :url
 
     def initialize(url)
-        binding.pry
         @url = url
     end
 
@@ -20,3 +19,6 @@ class GetRequester
         JSON.parse(self.get_response_body)
     end
 end
+
+object = GetRequester.new("https://apilist.fun/api/traveltime-api")
+puts object
